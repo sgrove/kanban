@@ -1,0 +1,41 @@
+<% content_tag_for :article, @project do %>
+
+  <h1><%= @project.name %></h1>
+
+  <div id="summary">
+    <%= @project.summary %>
+  </div>
+  
+  <% if @project.stages.present? %>
+    <section>
+      <h2>Cards</h2>
+
+      <%= render 'cards', :project => @project %>
+
+      <h3>Add a new card</h3>
+      <p>Add a new card to <%= @project.stages.first.name %>.</p>
+      <%= render 'cards/form', :project => @project %>
+
+    </section>
+  <% end %>
+  
+  <section>
+    <h2>Stages</h2>
+    <% if @project.stages.present? %>
+      <table>
+        <%= render @project.stages %>
+      </table>
+    <% else %>
+      <p>This project has no stages yet. Please add one.</p>
+    <% end %>
+    <h3>Add a new stage</h3>
+    <%= render 'stages/form', :project => @project %>
+  </section>
+  
+<% end %>
+
+
+<div>
+  <%= link_to 'Edit', edit_project_path(@project) %> |
+  <%= link_to 'Back', projects_path %>
+</div>

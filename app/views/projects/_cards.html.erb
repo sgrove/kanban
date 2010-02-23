@@ -1,0 +1,25 @@
+<table width="100%">
+  <tr>
+    <% project.stages.each do |stage| %>
+      <td valign="top">
+        <h3>
+          <%= nbspify(stage.name) %>&nbsp;<small><%= stage.limit.present? ? "(#{stage.cards.count}/#{stage.limit})" : "(#{stage.cards.count})" %></small>
+        </h3>
+        <% if stage.cards.present? %>
+          <%= render stage.cards, :project => project, :stage => stage %>
+        <% else %>
+          <p>
+            <small>
+              No cards here!
+              <% unless stage == project.stages.first %>
+                You should pull something from <%= project.stages[project.stages.index(stage) - 1].name %>.
+              <% else %>
+                You should brainstorm something new to work on.
+              <% end %>
+            </small>
+          </p>
+        <% end %>
+      </td>
+    <% end %>
+  </tr>
+</table>

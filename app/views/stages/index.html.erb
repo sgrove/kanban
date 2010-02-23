@@ -1,0 +1,21 @@
+<h1>Listing stages</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stages.each do |stage| %>
+  <tr>
+    <td><%= link_to 'Show', [@project, stage] %></td>
+    <td><%= link_to 'Edit', edit_project_stage_path(@project, stage) %></td>
+    <td><%= link_to 'Destroy', [@project, stage], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New stage', new_project_stage_path %>

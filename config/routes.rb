@@ -1,4 +1,19 @@
 Kanban::Application.routes.draw do |map|
+
+  resources :projects do
+    resources :stages do
+      resources :cards do
+        member do
+          post :advance
+          post :recede
+        end
+      end
+    end
+  end
+
+  
+  match '/' => 'pages#home'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

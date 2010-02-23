@@ -1,0 +1,9 @@
+<tr>
+  <td>
+    <%= stage.name %>
+  </td>
+  <td>
+    <%= stage.limit.present? ? stage.limit : raw('&mdash;') %>
+  </td>
+  <td><%= link_to 'Edit', edit_project_stage_path(@project, stage) %></td>
+</tr>

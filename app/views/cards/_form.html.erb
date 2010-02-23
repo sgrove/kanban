@@ -1,0 +1,13 @@
+<% form_for([project, project.stages.first, (@card||Card.new)]) do |f| %>
+  <%= f.error_messages %>
+  <%= f.hidden_field :stage_id %>
+  
+  <p>
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
