@@ -1,7 +1,8 @@
-<table width="100%">
+<% grid = 24 / project.stages.count %>
+<table width="100%" class="stage_count_<%= project.stages.count %>">
   <tr>
     <% project.stages.each do |stage| %>
-      <td valign="top">
+      <td valign="top" class="grid_<%= grid %>">
         <h3>
           <%= nbspify(stage.name) %>&nbsp;<small><%= stage.limit.present? ? "(#{stage.cards.count}/#{stage.limit})" : "(#{stage.cards.count})" %></small>
         </h3>

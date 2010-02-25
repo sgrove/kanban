@@ -1,0 +1,126 @@
+// 24 column flexible grid
+
+!columns = 24
+!pagewidth = 95%
+
+=column(!n)
+  display: inline
+  float: left
+  overflow: hidden
+  width = 100% / !columns * !n
+
+#page
+  width = !pagewidth
+  margin: 0 auto
+  min-width: 770px
+  //min-width: 985px
+
+.row
+  width: 100%
+  margin: 0 auto
+  overflow: visible
+
+.grid_1, .g1
+  +column(1)
+.grid_2, .g2
+  +column(2)
+.grid_3, .g3
+  +column(3)
+.grid_4, .g4
+  +column(4)
+.grid_5, .g5
+  +column(5)
+.grid_6, .g6
+  +column(6)
+.grid_7, .g7
+  +column(7)
+.grid_8, .g8
+  +column(8)
+.grid_9, .g9
+  +column(9)
+.grid_10, .g10
+  +column(10)
+.grid_11, .g11
+  +column(11)
+.grid_12, .g12
+  +column(12)
+.grid_13, .g13
+  +column(13)
+.grid_14, .g14
+  +column(14)
+.grid_15, .g15
+  +column(15)
+.grid_16, .g16
+  +column(16)
+.grid_17, .g17
+  +column(17)
+.grid_18, .g18
+  +column(18)
+.grid_19, .g19
+  +column(19)
+.grid_20, .g20
+  +column(20)
+.grid_21, .g21
+  +column(21)
+.grid_22, .g22
+  +column(22)
+.grid_23, .g23
+  +column(23)
+.grid_24, .g24
+  +column(24)
+
+
+////================ */
+////= The 1Kb Grid = */     /* 12 columns, 60 pixels each, with 20 pixel gutter */
+////================ */
+//
+//// Vertical rhythm:
+////    1.25em = !baseline
+//
+//!baseline = 20px
+//
+//.grid_1
+//  width = !baseline * 3
+//.grid_2
+//  width = !baseline * 7
+//.grid_3
+//  width = !baseline * 11
+//.grid_4
+//  width = !baseline * 15
+//.grid_5
+//  width = !baseline * 19
+//.grid_6
+//  width = !baseline * 23
+//.grid_7
+//  width = !baseline * 27
+//.grid_8
+//  width = !baseline * 31
+//.grid_9
+//  width = !baseline * 35
+//.grid_10
+//  width = !baseline * 39
+//.grid_11
+//  width = !baseline * 43
+//.grid_12
+//  width = !baseline * 47
+//
+//.column
+//  margin-left = !baseline / 2
+//  margin-right = !baseline / 2
+//  overflow: hidden
+//  float: left
+//  display: inline
+//
+//.row
+//  width = !baseline * 48
+//  margin: 0 auto
+//  overflow: visible
+//
+//.row .row
+//  margin-left = !baseline / -2
+//  margin-right = !baseline / -2
+//  width: auto
+//  display: inline-block
+//
+//.clear
+//  clear: both

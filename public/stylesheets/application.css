@@ -1,0 +1,224 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+dialog, figure, footer, header, hgroup, menu, nav, section, time, mark,
+audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+#page {
+  width: 95%;
+  margin: 0 auto;
+  min-width: 770px; }
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  overflow: visible; }
+
+.grid_1, .g1 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 4.167%; }
+
+.grid_2, .g2 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 8.333%; }
+
+.grid_3, .g3 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 12.5%; }
+
+.grid_4, .g4 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 16.667%; }
+
+.grid_5, .g5 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 20.833%; }
+
+.grid_6, .g6 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 25%; }
+
+.grid_7, .g7 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 29.167%; }
+
+.grid_8, .g8 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 33.333%; }
+
+.grid_9, .g9 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 37.5%; }
+
+.grid_10, .g10 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 41.667%; }
+
+.grid_11, .g11 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 45.833%; }
+
+.grid_12, .g12 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 50%; }
+
+.grid_13, .g13 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 54.167%; }
+
+.grid_14, .g14 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 58.333%; }
+
+.grid_15, .g15 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 62.5%; }
+
+.grid_16, .g16 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 66.667%; }
+
+.grid_17, .g17 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 70.833%; }
+
+.grid_18, .g18 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 75%; }
+
+.grid_19, .g19 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 79.167%; }
+
+.grid_20, .g20 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 83.333%; }
+
+.grid_21, .g21 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 87.5%; }
+
+.grid_22, .g22 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 91.667%; }
+
+.grid_23, .g23 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 95.833%; }
+
+.grid_24, .g24 {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 100%; }

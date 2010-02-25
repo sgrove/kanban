@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title
+    = stylesheet_link_tag 'application', controller.controller_name
+    = csrf_meta_tag
+  %body
+    .notice= notice
+    #page
+      %header
+      #main
+        = yield
+      %aside
+      %footer
+    = javascript_include_tag :defaults
