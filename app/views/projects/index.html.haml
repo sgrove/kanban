@@ -1,6 +1,9 @@
-%h1 Listing projects
+.g24
+  %h1 Listing projects
 
 = render @projects
 
-.actions
+.actions.g24
   = link_to 'Add a new project', new_project_path
+
+= render 'layouts/gridtest'

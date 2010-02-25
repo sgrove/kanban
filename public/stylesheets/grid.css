@@ -6,148 +6,88 @@
 .row {
   width: 100%;
   margin: 0 auto;
-  overflow: visible; }
+  overflow: visible;
+  text-align: center; }
 
 .grid_1, .g1 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 4.167%; }
+  width: 3.167%; }
 
 .grid_2, .g2 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 8.333%; }
+  width: 7.333%; }
 
 .grid_3, .g3 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 12.5%; }
+  width: 11.5%; }
 
 .grid_4, .g4 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 16.667%; }
+  width: 15.667%; }
 
 .grid_5, .g5 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 20.833%; }
+  width: 19.833%; }
 
 .grid_6, .g6 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 25%; }
+  width: 24%; }
 
 .grid_7, .g7 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 29.167%; }
+  width: 28.167%; }
 
 .grid_8, .g8 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 33.333%; }
+  width: 32.333%; }
 
 .grid_9, .g9 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 37.5%; }
+  width: 36.5%; }
 
 .grid_10, .g10 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 41.667%; }
+  width: 40.667%; }
 
 .grid_11, .g11 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 45.833%; }
+  width: 44.833%; }
 
 .grid_12, .g12 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 50%; }
+  width: 49%; }
 
 .grid_13, .g13 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 54.167%; }
+  width: 53.167%; }
 
 .grid_14, .g14 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 58.333%; }
+  width: 57.333%; }
 
 .grid_15, .g15 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 62.5%; }
+  width: 61.5%; }
 
 .grid_16, .g16 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 66.667%; }
+  width: 65.667%; }
 
 .grid_17, .g17 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 70.833%; }
+  width: 69.833%; }
 
 .grid_18, .g18 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 75%; }
+  width: 74%; }
 
 .grid_19, .g19 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 79.167%; }
+  width: 78.167%; }
 
 .grid_20, .g20 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 83.333%; }
+  width: 82.333%; }
 
 .grid_21, .g21 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 87.5%; }
+  width: 86.5%; }
 
 .grid_22, .g22 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 91.667%; }
+  width: 90.667%; }
 
 .grid_23, .g23 {
-  display: inline;
-  float: left;
-  overflow: hidden;
-  width: 95.833%; }
+  width: 94.833%; }
 
 .grid_24, .g24 {
+  width: 99%; }
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_5, .grid_6, .grid_7,
+.grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14,
+.grid_15, .grid_16, .grid_17, .grid_18, .grid_19, .grid_20, .grid_21,
+.grid_22, .grid_23, .grid_24, .g1, .g2, .g3, .g4, .g5, .g5, .g6, .g7, .g8,
+.g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16, .g17, .g18, .g19, .g20, .g21,
+.g22, .g23, .g24 {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 100%; }
+  margin-right: 1%; }

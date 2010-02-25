@@ -1,26 +1,33 @@
-- 24.times do
-  .center.g1{:style => cycle('background:#fff', 'background:#ddd')}
-    Grid 1
+.row
+  - 24.times do
+    .g1{:style => cycle('background:#fff', 'background:#ddd')}
+      Grid 1
 
-- 12.times do
-  .center.g2{:style => cycle('background:#eee', 'background:#ccc')}
-    Grid 2
+.row
+  - 12.times do
+    .g2{:style => cycle('background:#eee', 'background:#ccc')}
+      Grid 2
 
-- 8.times do
-  .center.g3{:style => cycle('background:#ddd', 'background:#bbb')}
-    Grid 3
+.row
+  - 8.times do
+    .g3{:style => cycle('background:#ddd', 'background:#bbb')}
+      Grid 3
 
-- 6.times do
-  .center.g4{:style => cycle('background:#ccc', 'background:#aaa')}
-    Grid 4
+.row
+  - 6.times do
+    .g4{:style => cycle('background:#ccc', 'background:#aaa')}
+      Grid 4
 
-- 4.times do
-  .center.g6{:style => cycle('background:#bbb', 'background:#999')}
-    Grid 6
+.row
+  - 4.times do
+    .g6{:style => cycle('background:#bbb', 'background:#999')}
+      Grid 6
 
-- 3.times do
-  .center.g8{:style => cycle('background:#aaa', 'background:#888')}
-    Grid 8
+.row
+  - 3.times do
+    .g8{:style => cycle('background:#aaa', 'background:#888')}
+      Grid 8
 
-.center.g24{:style => cycle('background:#999', 'background:#777')}
-  Grid 24
+.row
+  .g24{:style => cycle('background:#999', 'background:#777')}
+    Grid 24

@@ -2,12 +2,10 @@
 
 !columns = 24
 !pagewidth = 95%
+!gutter = 1%
 
 =column(!n)
-  display: inline
-  float: left
-  overflow: hidden
-  width = 100% / !columns * !n
+  width = (100% / !columns * !n) - !gutter
 
 #page
   width = !pagewidth
@@ -19,6 +17,7 @@
   width: 100%
   margin: 0 auto
   overflow: visible
+  text-align: center
 
 .grid_1, .g1
   +column(1)
@@ -68,6 +67,19 @@
   +column(23)
 .grid_24, .g24
   +column(24)
+
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_5, .grid_6, .grid_7,
+.grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_14,
+.grid_15, .grid_16, .grid_17, .grid_18, .grid_19, .grid_20, .grid_21,
+.grid_22, .grid_23, .grid_24, .g1, .g2, .g3, .g4, .g5, .g5, .g6, .g7, .g8,
+.g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16, .g17, .g18, .g19, .g20, .g21,
+.g22, .g23, .g24
+  display: inline
+  float: left
+  overflow: hidden
+  margin-right = !gutter
+  //margin-left = !gutter
 
 
 ////================ */
