@@ -37,3 +37,6 @@ h5, article h4, article section h3, article article h2 {
 small {
   font-size: 85;
   line-height: 20px; }
+
+section, article, p {
+  margin-bottom: 20px; }
