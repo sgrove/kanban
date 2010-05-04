@@ -1,0 +1,3 @@
+- content_tag_for :article, project do
+  %h2= link_to project.name, project
+  .cards= render 'cards', :project => project

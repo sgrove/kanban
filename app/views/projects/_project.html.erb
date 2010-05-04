@@ -1,7 +1,4 @@
 <% content_tag_for :article, project do %>
-
   <h2><%= link_to project.name, project %></h2>
-
   <%= render 'cards', :project => project %>
-
 <% end %>

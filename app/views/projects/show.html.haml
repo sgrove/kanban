@@ -1,0 +1,38 @@
+- content_tag_for :article, @project do
+  %header.project_header
+    %h1= link_to @project.name, @project
+    .project_summary= @project.summary
+  %section.project_stages
+    %table
+      %tr
+        = render @project.stages, :project => @project
+  %aside.project_aside
+    %h2 Add a new card
+    %p
+      Add a new card to
+      = @project.stages.first.name + '.'
+    
+  %footer.project_footer
+
+
+/   
+/   <section>
+/     <h1>Stages</h1>
+/     <% if @project.stages.present? %>
+/       <table>
+/         <%= render @project.stages %>
+/       </table>
+/     <% else %>
+/       <p>This project has no stages yet. Please add one.</p>
+/     <% end %>
+/     <h2>Add a new stage</h2>
+/     <%= render 'stages/form', :project => @project %>
+/   </section>
+/   
+/ <% end %>
+/ 
+/ 
+/ <div>
+/   <%= link_to 'Edit', edit_project_path(@project) %> |
+/   <%= link_to 'Back', projects_path %>
+/ </div>

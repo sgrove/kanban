@@ -1,8 +1,0 @@
-<% content_tag_for :article, card do %>
-  <h4><%= card.name %></h4>
-  <div class="actions">
-    <%= link_to_unless(card.stage == project.stages.first, raw('&larr;'), recede_project_stage_card_path(project, stage, card), :method => :post) %>
-    <%= link_to 'Edit', edit_project_stage_card_path(project, stage, card) %>
-    <%= link_to_unless(card.stage == project.stages.last, raw('&rarr;'), advance_project_stage_card_path(project, stage, card), :method => :post) %>
-  </div>
-<% end %>

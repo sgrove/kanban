@@ -7,9 +7,9 @@
   %body
     .notice= notice
     #page
-      %header
-      #main
+      %header#page_header
+      #page_main
         = yield
-      %aside
-      %footer
+      %aside#page_aside
+      %footer#page_footer
     = javascript_include_tag :defaults

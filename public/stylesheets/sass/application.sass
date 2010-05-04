@@ -1,3 +1,59 @@
+!line = 20px
+
 @import reset
 @import grid
 @import typography
+
+// LAYOUT STUFF
+
+#page
+  padding = !line
+
+.project
+  .project_header
+    margin-bottom = !line
+
+.card
+  margin-top = !line
+  margin-bottom = !line
+  margin-left = !line / 4
+  margin-right = !line / 4
+  padding-top = !line
+  padding-bottom = !line
+  padding-left = !line
+  padding-right = !line
+  min-height = !line * 4
+
+  header
+    margin-bottom = !line
+  aside
+    font-size: 11px
+    line-height = !line
+
+
+// COLORS
+
+!link = #369
+!card = #ffc
+!cardhighlight = #fff*(3/4) + !card*(1/4)
+!cardshadow = #777
+!cardshadowfocus = #069
+
+body
+  background-color: #f6f6f6
+  background-image: url(/images/bg/fiberboard-128-lightgrey.png)
+  background-attachment: fixed
+  min-height: 100%
+
+.card
+  background = !card
+  box-shadow = "0px 2px 3px #{!cardshadow}"
+  -webkit-box-shadow = "0px 2px 3px #{!cardshadow}"
+  background-image = "-webkit-gradient(linear, 0% 0%, 0% 100%, from(#{!cardhighlight}), to(#{!card}), color-stop(.4,#{!cardhighlight}))"
+
+  &.focus
+    box-shadow = "0px 0px 4px #{!cardshadowfocus}"
+    -webkit-box-shadow = "0px 0px 4px #{!cardshadowfocus}"
+
+a
+  color = !link

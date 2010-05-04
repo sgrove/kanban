@@ -1,0 +1,7 @@
+- content_tag_for :article, card do
+  %header
+    %h1= card.name
+  %aside.card_actions
+    = link_to_unless(card.stage == card.project.stages.first, raw('&larr;'), recede_project_stage_card_path(card.project, card.stage, card), :method => :post)
+    = link_to 'Edit', edit_project_stage_card_path(card.project, card.stage, card)
+    = link_to_unless(card.stage == card.project.stages.last, raw('&rarr;'), advance_project_stage_card_path(card.project, card.stage, card), :method => :post)

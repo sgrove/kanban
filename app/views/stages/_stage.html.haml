@@ -1,0 +1,14 @@
+- grid = ["grid", (24 / project.stages.count)].join('_')
+- content_tag_for :td, stage, :class => grid do
+  %header.stage_header
+    %h1= stage.name
+    %em.limit= stage.limit ? "Limit: #{stage.limit}" : raw('&mdash;')
+    / .sort
+    /   Sort by [age, votes, random, custom]
+  %section.stage_cards
+    = render stage.cards[0,5], :project => project, :stage => stage
+    - if stage.cards.count > 5
+      .hidden_cards
+        = stage.cards.count - 5
+        cards hidden
+  %footer.stage_footer
