@@ -12,3 +12,9 @@
         = stage.cards.count - 5
         cards hidden
   %footer.stage_footer
+    - if stage.first?
+      %h2 Add a new card
+      %p
+        Add a new card to
+        = stage.name + '.'
+      = render 'cards/form', :project => project, :stage => stage
